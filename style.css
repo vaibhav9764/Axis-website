@@ -3,12 +3,16 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+
+
+/* Navbar Css */
 .navbar {
     height: 73px;
     position: sticky;
@@ -54,14 +58,11 @@ html {
     border: 2px solid white;
     border-radius: 180px;
     cursor: pointer;
-
 }
-
 
 .right-nav {
     width: 30%;
     text-align: end;
-
 }
 
 #search {
@@ -69,7 +70,6 @@ html {
     border-radius: 7px;
     font-size: 17px;
     width: 40%;
-
 }
 
 .btn {
@@ -82,7 +82,6 @@ html {
     background: none;
     color: white;
     font-family: 'Ubuntu', sans-serif;
-
 }
 
 .btn-sm {
@@ -110,6 +109,9 @@ html {
 
 }
 
+
+
+/* first section */
 .first-section {
     height: 100vh;
 }
@@ -124,6 +126,8 @@ html {
     color: black;
 }
 
+
+/* About section*/
 .second-section {
     height: 734px;
 }
@@ -150,13 +154,13 @@ html {
 
 }
 
-.box-img {}
-
 .box-img img {
     height: 170px;
     border-radius: 14px;
 }
 
+
+/* Gallery Section */
 #AxisGallery {
     height: 690px;
     display: flex;
@@ -168,10 +172,121 @@ html {
 
 }
 
-.container img{
+.container img {
     height: 150px;
     margin: 4px;
     border-radius: 5px;
     border: 2px solid red;
+    opacity: 0.6;
   
+}
+.container img:hover{
+    opacity: 1;
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    font-size: 35px;
+}
+
+.footer-left {
+    width: 50%;
+}
+
+.footer-left h3 {
+    margin-top: 0;
+}
+
+.footer-left p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-left ul {
+    display: flex;
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.footer-left ul li {
+    margin-right: 20px;
+}
+
+.footer-left ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-left ul li a {
+    color: #fff;
+    font-size: 24px;
+}
+
+.footer-right {
+    width: 40%;
+}
+
+.footer-right button {
+    border-radius: 7px;
+}
+
+.footer-right h3 {
+    margin-top: 0;
+}
+
+.footer-right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right input,
+.footer-right textarea {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+.footer-right input::placeholder,
+.footer-right textarea::placeholder {
+    color: #999;
+}
+
+.footer-right button {
+    background-color: #e31b6d;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-right button:hover {
+    background-color: #c41a5f;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    color: white;
 }
